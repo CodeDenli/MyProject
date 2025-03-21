@@ -31,7 +31,7 @@ sections:
     subtitle: Section subtitle here
     items:
       - type: Card
-        title: First Card Title
+        title: Норвегия
         image:
           type: Image
           url: /images/норвегия.jpg
