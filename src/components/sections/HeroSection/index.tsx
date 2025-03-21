@@ -69,6 +69,7 @@ export const HeroSection: React.FC<Props> = (props) => {
                             }}
                             alt={image?.altText}
                             src={image?.url}
+                            layout="fill"
                             data-sb-field-path=".image .image.url#@src .image.altText#@alt"
                         />
                     </MuiGrid>
