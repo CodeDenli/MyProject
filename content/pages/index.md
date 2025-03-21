@@ -3,7 +3,7 @@ title: Home
 type: Page
 sections:
   - type: HeroSection
-    title: Hero Title
+    title: Путешествуйте куда угодно
     subtitle: 'Featuring TypeScript, Next.js, MUI v5 & Emotion'
     text: >
       This is the HeroSection component. You can visually edit this component &
@@ -24,7 +24,7 @@ sections:
         color: primary
     image:
       type: Image
-      url: /images/hero.svg
+      url: /images/путешествие.jpg
       altText: Hero section image
   - type: CardsSection
     title: Cards Section Component
@@ -74,5 +74,5 @@ sections:
         actions:
           - type: Button
             label: Read the Docs
-            url: 'https://docs.netlify.com/visual-editor/overview/'
+            url: ''
 ---
