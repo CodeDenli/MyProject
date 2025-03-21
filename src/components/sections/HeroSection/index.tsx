@@ -1,5 +1,6 @@
 import * as React from 'react';
 import type * as types from 'types';
+import Image from 'next/image';
 import { Button } from '../../atoms/Button';
 import { Markdown } from '../../atoms/Markdown';
 
@@ -60,18 +61,14 @@ export const HeroSection: React.FC<Props> = (props) => {
                 )}
                 {image?.url && (
                     <MuiGrid item xs={12} md={hasTextContent ? 6 : 12}>
-                        <MuiBox
-                            component="img"
-                            sx={{
-                                height: 'auto',
-                                maxWidth: '100%',
-                                width: '100%'
-                            }}
-                            alt={image?.altText}
-                            src={image?.url}
-                            layout="fill"
-                            data-sb-field-path=".image .image.url#@src .image.altText#@alt"
-                        />
+                        <MuiBox sx={{ position: 'relative', width: '100%', height: '100%', minHeight: 300 }}>
+                            <Image
+                                src={image.url}
+                                alt={image.altText || 'Hero Image'}
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </MuiBox>
                     </MuiGrid>
                 )}
             </MuiGrid>
